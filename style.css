@@ -1,0 +1,463 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+        
+
+
+
+@font-face {
+    font-family: 'Just Breathe';
+    src: url(fonts/Just\ Breathe.woff) format('woff'),     
+        url(fonts/Just\ Breathe.woff2) format('woff2');
+        
+
+}
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    
+    
+}
+
+
+
+
+
+section{
+    scroll-snap-align: start;
+    scroll-snap-stop:always ;
+    display: grid;
+    text-align: center;
+    overflow-y: scroll; 
+    overflow-x:hidden ;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* filter: blur(50px); */
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.section0 {
+    text-shadow:0ch;
+    height: 100vh; 
+    scroll-snap-align: start;
+}
+
+
+#btn {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1% 2%;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 5px;
+    letter-spacing:1px;
+    position: relative;
+    top: 12%;
+}
+/* pour créer un effet fluide une fois la souris sur le boutton */
+#btn:hover {
+    background-color: rgba(254, 254, 254, 0.658);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1% 2%;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 5px;
+    letter-spacing:1px;
+    position: relative;
+    top: 12%;
+
+}
+@keyframes float {
+    0% {
+        box-shadow: 0 15px 20px 10px rgba(38, 202, 247), 0 0 20px rgb(41, 214, 107);
+
+        transform: translateY(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 30px 5px rgba(38, 202, 247), 0 0 30px rgb(41, 214, 107);
+
+        transform: translateY(20px);
+    }
+
+    100% {
+        box-shadow: 0 15px 20px 10px rgba(38, 202, 247), 0 0 20px rgb(41, 214, 107);
+
+        transform: translateY(0px);
+    }
+}
+
+
+img {
+    height: 40vh;
+    border: 0px solid;
+    border-radius: 20px;
+    border: solid 10px  #bce91e;
+} 
+img.fermer{
+height:10px;
+width:10px;
+cursor: pointer;
+} 
+
+section h1{
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.802); 
+    text-shadow: #ffffff;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 30px;
+    font-family: 'Just Breathe';
+    border: solid 5px #bce91e;
+    margin-top: 15px;
+
+  } 
+   
+
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-shadow: rgb(255, 255, 255) 1px 0px 6px ;
+    margin-bottom: 2%;
+    font-family: 'Just Breathe';
+    line-height: 2.5rem;
+    margin: 15px;
+  
+}
+h3{
+    text-shadow: #36e91e 1px 0px 30px ;
+    font-size: 3rem;
+    margin-top: 40%;
+    font-family: 'Just Breathe';
+    
+}
+
+h4{
+    font-size: 1rem;
+    text-transform:uppercase ;
+    text-shadow: #bce91e ;
+}
+
+h5{
+    color:white;
+    text-shadow: white 1px 0px 5px ;
+    font-size: 2rem;
+    margin: 15px;
+   
+
+}
+
+
+.justification {
+    margin:14vw;
+    text-align: center;
+    margin: 2% 4%;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 30px;
+    overflow-y: auto;
+    border: 5px solid #bce91e;
+  
+}
+
+
+a img {
+    height: 3vh;
+    
+}
+
+
+section h1, h2, p, a {
+    width: 40%;
+    font-size: 1.5rem;   
+}
+
+h2 {
+
+font-size: 3rem;
+}
+
+h6 {
+font-size: 2rem;
+}
+
+.justification {
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    font-family: 'The Smile';
+   
+  }
+
+
+
+nav {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    text-align: center;
+  }
+
+nav ul li a{
+    color: rgb(10, 9, 9);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Just Breathe';
+    
+}
+
+nav ul li a:hover {
+    border-bottom: solid 1px rgb(251, 248, 248);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.pform{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px#a4e175  ;
+}
+
+input textarea{
+border-radius: 10%;
+}
+.pform2{ 
+font-size: 1.5rem;
+width: 100vw;
+margin: auto;
+text-align: center;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-shadow: 3px 3px 3px #a4e175 ;
+
+}
+
+
+.styleform{
+position: relative;
+background-color: rgba(234, 255, 50, 0.794);
+width: 500px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+border-radius: 30px;
+padding: 50px;
+
+}
+
+.contenuML{
+    position: relative;
+    z-index: 5;
+    display:none;
+    position:fixed;
+    top:100px;
+    bottom:50px;
+    left:50px;
+    background-color:rgb(42 80 19 / 66%); 
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding:20px;
+    width: 85%;
+
+}
+/* C'est pour fluidifié le scroll */
+html{
+    -ms-scroll-snap-type:y mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    margin: 0;
+
+}   
+h6{
+    cursor: pointer;
+    left:100px;
+    right: 25px;
+    background-color:#4add00;
+    color: white;
+    font-family: 'Just Breathe';
+}
+
+.contenuML img{
+    width: 20px;
+    height:20px;
+    display:flex;
+    margin-left: auto;
+    right:50px;
+}
+/* animation de fond coloré */
+body{
+  background-color: #a4e175 ;;
+  background-size: 400% 400%; 
+  position: relative;
+  display: flex;
+} 
+
+h1{
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.243);
+  padding: 20px;
+  font-size: 50px;
+  border-radius: 30px;
+}
+
+@keyframes animate{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+.sectionMENTION{
+width:fit-content;
+height:fit-content;
+
+}
+.fermer{
+    width: 20px;
+    height: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   top: auto;
+   bottom: auto;
+
+
+
+}
+textarea#explication{
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+input#envoyer{
+    background-color: white;
+    padding:10px;
+    border-radius: 20px;
+}
+
+input#envoyé:hover{
+background-color: black;
+color: white;
+transition:0.8s;
+border-radius: 20px;
+}
+
+
+
+p#MLimages{
+    color: #ffffff;
+    left: 100px;
+    border-radius: 20px;
+}
+
+
+p#hébergement{
+color: #000000;
+}
+p#collecte{
+    color: #000000;
+  }
+p{
+color:rgb(255, 255, 255);
+margin-right: auto;
+margin-left:auto;
+font-size:0.7rem;
+
+}
+
+p#collecteC{
+    justify-content: center;
+   font-size:0.7rem;
+    width: 82vw;
+    height: auto;
+    
+}
+
+/* .formulaire h5{
+    font-size: 2rem;
+    border-radius: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 3px #a4e175  ;
+    width: 300px;
+    margin-bottom: 20px;
+    margin: auto;
+    padding: auto;
+} */
+/* tu t'es trompée de sélecteur, c'était pas h3 mais h5 à toi de voir si tu gardes ou pas */
+
+
+input { 
+
+    width: 300px;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    }
+
+    .copyright{
+        padding: 20px 45px;
+        background: rgb(255, 255, 255);
+        text-align: center;
+        border: solid 5px rgb(229, 255, 0) ;
+        border-radius: 15px;
+        text-align: center;
+        
+        }
+        
+        
+        .copyright a{
+            color: white;
+            text-decoration: none;
+            background: #bfff00 ;
+            border-radius: 30px;
+            font-family: 'Just Breathe' ;
+        }
+
+
+        .Images{
+
+            font-size: 0.7rem;
+        }

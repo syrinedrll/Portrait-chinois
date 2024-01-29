@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- header avec les informations relatives aux langages utilisés et l'icon avec le titre de ma page -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./images/flavicon.png">
+    <title>Portrait chinois Syrine</title>
+    <link rel="icon" type="image/png" href="images/iconeR.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- lien vers le data et js -->
+    <script src="data.js"></script>
+
+    <script src="script.js"></script>
+
+    <!-- liste de mes analogies pour  y accéder dès ma page d'accueil  -->
+    <section class="survol" class="section0" id="accueil">
+
+        <div class="container">
+            <nav>
+                <ul>
+                    <li> <a href="#film">film </a> </li>
+
+                    <li> <a href="#Série">Série</a> </li>
+
+                    <li> <a href="#Animé">Animé</a> </li>
+
+                    <li> <a href="#Couleur">Couleur</a> </li>
+
+                    <li> <a href="#Personnage">Personnage</a> </li>
+
+                    <li> <a href="#Plat">Plat</a> </li>
+
+                    <li> <a href="#Animal">Animal</a> </li>
+                </ul>
+            </nav>
+            <h3> LE PORTRAIT CHINOIS DE SYSY</h3>
+
+            <h4>Découvrez mon portrait chinois et explorez votre propre identité à travers cette expérience interactive
+                !</h4>
+            <a href="#film" id="btn"> VOIR</a>
+        </div>
+
+
+
+
+        <!-- pour commencer à naviguer sur ma page -->
+
+
+    </section>
+    <div id="div-contenu">
+
+    </div>
+    <div class="ajouter"></div>
+
+
+    <section class="formulaire">
+        <div class="styleform">
+            <h5>C'est votre tour !</h5>
+            <div id="formMessage" class="formMessage"></div>
+            <form action="" id="unformulaire" class="center">
+                <div class="pform">
+
+                    <div class="pform2">
+                        <label aria-describedby="courriel" for="courriel" class="formulaire">Mail*:<br> </label>
+                            <input type="email" name="mail" id="courriel" placeholder="test@hotmail.fr" required>                       
+                    </div>
+
+                    <div class="pform2">
+                        <label aria-describedby="analogie" for="analogie">Si j'étais...*<br></label>
+                            <input type="text" name="analogie" id="analogie"
+                                placeholder="(exemple: une série)" required>
+                        
+                    </div>
+
+                    <div class="pform2">
+                        <label aria-describedby="valeurAnalogie" for="valeurAnalogie">Je serais...*<br></label>
+                            <input type="text" name="valeurAnalogie" id="valeurAnalogie"
+                                placeholder="(exemple: titanic...)" required>
+                        
+                    </div>
+
+                    <div class="pform2">
+                        <label aria-describedby="image" for="image">Lien de l'image :<br></label>
+                            <input type="text" name="image" id="image" placeholder="URL de l'image (PNG,JPG)">
+                        
+                    </div>
+
+                    <div class="pform2">
+                        <label aria-describedby="explication" for="explication">Explications:<br></label>
+
+                            <textarea name="explication" id="explication"
+                                placeholder="(exemple: car c'est ma série préférée)" rows="5" cols="35"></textarea>
+                    </div>
+
+                    <div class="envoi pform2">
+                        <label>
+                            <input type="submit" value="Envoyer et Créer" id="envoyer">
+                        </label>
+                        <br>
+                    <div class="obligatoire">
+                        Obligatoire*
+                    </div>
+                    </div>
+                    <p class="fonctionné"></p>
+                </div>
+            </form>
+
+        </div>
+        <!-- Cela m'aide à créer un espace entre le formulaire et le retour à la page d'acceuil -->
+        <a href="#accueil" id="bas"></a>
+    </section>
+    <!-- création de ma section pour les mentions légales -->
+    <section class="sectionMENTION">
+        <!-- mise en place de mes mentions dans le footer -->
+        <footer>
+            <h6 id="section8">Mentions légales</h6>
+            <div class="contenuML">
+
+                <h7>Mentions légales</h7>
+                <div class="contenuML scrollable"></div>
+
+
+
+                <p>Ce site a été réalisé par Syrine DAR-ALIA dans le cadre d'un projet (SAE 1.05) encadré par les
+                    enseignants suivants: <br>Philippe Gambette, Gaëlle Charpentier, Matthieu Berthet .</p>
+
+                <br>
+
+                <div class="Images">Images</div>
+                <p>
+                <p>Unsplash: <a href="https://unsplash.com/fr">https://unsplash.com/fr</a><br>
+                    Certain dessins et images viennent de la creatrice du site.
+
+
+                </p>
+
+                </p>
+
+                <!-- lien vers ma banque d'image -->
+
+                <a href="https://unsplash.com/fr/photos/homme-en-costume-noir-tenant-un-livre-noir-CSSBaUKOmhY"
+                    target="_blank" title="Ce lien ouvrira dans une nouvelle fenêtre">DeathNote.jpg</a><br>
+                <a href="https://unsplash.com/fr/photos/velo-blanc-pres-dun-mur-de-verre-3vv1A8zNG9A" target="_blank"
+                    title="Ce lien ouvrira dans une nouvelle fenêtre">Beige.jpg</a><br>
+                <a href="https://unsplash.com/fr/photos/recipients-en-argile-beige-QeUQ-zZZB6E" target="_blank"
+                    title="Ce lien ouvrira dans une nouvelle fenêtre">Tajine.jpg</a><br>
+
+                </p>
+
+                <p id="hébergement"> Hébergement</p>
+                <p>Hébergeur: Université Gustave Eiffel :
+
+                    Université Gustave Eiffel
+                    - 2 rue Albert Einstein, 77420 Champs-sur-Marne, France
+                    - +33 1 60 95 75 00 -
+                    webmaster@univ-eiffel.fr
+
+                </p>
+
+                <p id="collecte"> La collecte des données personnelles</p>
+                <p id="collecteC"> Conformément à l'article 15 du Règlement général sur la protection des données (RGPD)
+                    du 27 avril 2016, vous disposez d'un droit d'accès aux informations vous concernant. Si vous trouvez
+                    que ces informations sont incorrectes, l'article 16 du RGPD vous permet de les modifier ou de les
+                    supprimer. Dans ce cas, merci de contacter le directeur de la communication : com@univ-eiffel.fr.
+                    Vos données ne seront jamais transmises à des tiers et ne feront jamais l'objet d'une
+                    commercialisation. Elles seront envoyées à une base de données ; pour toute demande de suppression
+                    ou toute question relative à la collecte ou au traitement de vos données personnelles par le site
+                    web, vous pouvez contacter le respnsable de la protection des données du projet :
+                    philippe.gambette@univ-eiffel.fr.
+                    <br>Dans le cadre de ce projet, je me suis inspirée du code de Rihab et Léana étudiantes en deuxième
+                    année pour les mentions légales et disgn du site. Et le Js en observant du code des deuxièmes années
+                    et en regardant des videos sur Youtube.
+                </p>
+
+                <img src="images/croix.png" alt="fermer" class="fermer">
+
+            </div>
+            <!-- Retour à la page d'acceuil du site -->
+    </section>
+    <div class="copyright">
+        <p>
+            <a href="#">Retour à la page d'acceuil du site</a>
+        </p>
+    </div>
+
+    </div>
+    </footer>
+    </section>
+
+</body>
+
+</html>
